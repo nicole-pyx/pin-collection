@@ -5,6 +5,20 @@ body {
 }
 
 #map {
-  height: 90vh;
+  flex: 2;
+}
+
+/* Sidebar takes right side */
+#sidebar {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: #f7f7f7;
+  border-left: 1px solid #ddd;
+}
+
+#gallery img {
   width: 100%;
+  margin-bottom: 10px;
+  border-radius: 8px;
 }
