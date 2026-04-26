@@ -1,2 +1,2 @@
 # pin-collection
-my travel pins
+pins that i've collected while travelling
