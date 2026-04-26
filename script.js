@@ -19,7 +19,7 @@ L.marker([35.0116, 135.7681]).addTo(map)
   `);
 
 // Nyc pin
-L.marker([40.4246, -74.0022]).addTo(map)
+L.marker([40.7826, -73.9656]).addTo(map)
   .bindPopup(`
     <h3>NYC, USA</h3>
     <img src="images/newyork.JPG" width="200">
