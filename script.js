@@ -11,9 +11,9 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // Example pin
-L.marker([35.6762, 139.6503]).addTo(map)
+L.marker([35.0116, 135.7681]).addTo(map)
   .bindPopup(`
     <h3>Kyoto, Japan</h3>
     <img src="images/kyoto.JPG" width="200">
-    <p>My first pin from Japan 🇯🇵</p>
+    <p>so cutie</p>
   `);
