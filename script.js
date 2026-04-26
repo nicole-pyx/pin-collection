@@ -2,18 +2,6 @@ console.log("JS connected!");
 image: "images/kyoto.jpg"
 image: "images/newyork.jpg"
 
-let currentImages = [];
-let currentIndex = 0;
-function showNext() {
-  currentIndex = (currentIndex + 1) % currentImages.length;
-  document.getElementById("popup-img").src = currentImages[currentIndex];
-}
-
-function showPrev() {
-  currentIndex =
-    (currentIndex - 1 + currentImages.length) % currentImages.length;
-  document.getElementById("popup-img").src = currentImages[currentIndex];
-}
 
 // Create map
 var map = L.map('map').setView([20, 0], 2);
@@ -32,6 +20,19 @@ L.marker([40.7826, -73.9656]).addTo(map)
     <p>I❤️NY</p>
   `);
 
+let currentImages = [];
+let currentIndex = 0;
+
+function showNext() {
+  currentIndex = (currentIndex + 1) % currentImages.length;
+  document.getElementById("popup-img").src = currentImages[currentIndex];
+}
+
+function showPrev() {
+  currentIndex =
+    (currentIndex - 1 + currentImages.length) % currentImages.length;
+  document.getElementById("popup-img").src = currentImages[currentIndex];
+}
 
 // japan pins
 var pin = {
