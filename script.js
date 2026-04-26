@@ -10,10 +10,18 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© OpenStreetMap'
 }).addTo(map);
 
-// Example pin
+// kyoto pin
 L.marker([35.0116, 135.7681]).addTo(map)
   .bindPopup(`
     <h3>Kyoto, Japan</h3>
     <img src="images/kyoto.JPG" width="200">
     <p>so cutie</p>
+  `);
+
+// Nyc pin
+L.marker([40.4246, 74.0022]).addTo(map)
+  .bindPopup(`
+    <h3>NYC, USA</h3>
+    <img src="images/newyork.JPG" width="200">
+    <p>I❤️NY</p>
   `);
