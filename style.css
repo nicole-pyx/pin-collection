@@ -6,6 +6,7 @@ body {
 
 #map {
   flex: 2;
+  height: 100%;
 }
 
 /* Sidebar takes right side */
