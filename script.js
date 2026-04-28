@@ -10,6 +10,14 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
+// Nyc pin
+L.marker([40.7826, -73.9656]).addTo(map)
+  .bindPopup(`
+    <h3>NYC, USA</h3>
+    <img src="images/newyork.JPG" width="200">
+    <p>I❤️NY</p>
+  `);
+
 var pins = [
   {
     id: "nyc",
@@ -33,3 +41,21 @@ var pins = [
     description: "hokkaido in the summer"
   }
 ];
+
+function openSidebar(pin) {
+  document.getElementById("title").innerText = pin.location;
+  document.getElementById("desc").innerText = pin.description;
+
+  document.getElementById("gallery").innerHTML =
+    pin.images.map(img => `<img src="${img}">`).join("");
+}
+
+pins.forEach(pin => {
+
+  L.marker(pin.coords)
+    .addTo(map)
+    .on('click', () => {
+      openSidebar(pin);
+    });
+
+});
