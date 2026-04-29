@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+h1, h2, h5 {
+  font-family: 'Nunito', sans-serif;
+}
+
 #container {
   display: flex;
   height: 100vh;
@@ -21,10 +25,48 @@ body {
 }
 
 #gallery img {
-  width: 100%;        /* fit inside sidebar */
-  height: auto;       /* keep proportions */
-  max-width: 100%;    /* prevent overflow */
-  display: block;
-  margin-bottom: 10px;
+  width: 100%;
+  height: auto;          /* keeps grid neat */
+  object-fit: cover;      /* crops nicely */
   border-radius: 8px;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* 🔥 2 columns */
+  gap: 10px;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-container {
+  position: relative;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  bottom: 8px;
+  left: 50%;
+
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  font-weight: 500;
+
+  opacity: 0;
+
+  transition: opacity 0.2s;
+  transform: translateX(-50%);
+}
+
+
+.img-container:hover .tooltip {
+  opacity: 1;
 }
