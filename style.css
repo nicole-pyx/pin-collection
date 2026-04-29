@@ -1,7 +1,10 @@
 body {
-  font-family: Arial;
   margin: 0;
-  text-align: center;
+}
+
+#container {
+  display: flex;
+  height: 100vh;
 }
 
 #map {
@@ -9,17 +12,19 @@ body {
   height: 100%;
 }
 
-/* Sidebar takes right side */
 #sidebar {
   flex: 1;
-  padding: 20px;
+  height: 100%;
   overflow-y: auto;
+  padding: 20px;
   background: #f7f7f7;
-  border-left: 1px solid #ddd;
 }
 
 #gallery img {
-  width: 100%;
+  width: 100%;        /* fit inside sidebar */
+  height: auto;       /* keep proportions */
+  max-width: 100%;    /* prevent overflow */
+  display: block;
   margin-bottom: 10px;
   border-radius: 8px;
 }
