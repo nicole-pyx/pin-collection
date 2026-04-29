@@ -4,6 +4,8 @@ body {
 
 h1, h2, h5 {
   font-family: 'Nunito', sans-serif;
+  text-align: center;
+  
 }
 
 #container {
@@ -55,7 +57,7 @@ h1, h2, h5 {
   color: white;
   padding: 4px 8px;
   border-radius: 6px;
-  
+
   font-size: 12px;
   font-family: Arial, sans-serif;
   font-weight: 500;
