@@ -68,7 +68,26 @@ h1, h2, h5 {
   transform: translateX(-50%);
 }
 
-
 .img-container:hover .tooltip {
   opacity: 1;
+}
+
+#weather, #time {
+  flex: 1;
+
+  background: #f0f0f0;
+  padding: 10px;
+
+  border-radius: 10px;
+
+  text-align: center;
+}
+
+#info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+  gap: 10px;
 }
